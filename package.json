@@ -1,0 +1,56 @@
+{
+  "name": "cloud-bill-analyzer",
+  "version": "0.1.0",
+  "description": "See what your AWS, Azure or Google Cloud bill would cost on EU-owned clouds. Runs in your browser; the file never leaves your machine.",
+  "license": "Apache-2.0",
+  "author": "MoveInfra <hello@moveinfra.eu> (https://moveinfra.eu)",
+  "homepage": "https://moveinfra.github.io/cloud-bill-analyzer/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moveinfra/cloud-bill-analyzer.git"
+  },
+  "bugs": "https://github.com/moveinfra/cloud-bill-analyzer/issues",
+  "keywords": [
+    "aws",
+    "azure",
+    "gcp",
+    "cloud cost",
+    "finops",
+    "hetzner",
+    "scaleway",
+    "ovhcloud",
+    "upcloud",
+    "cur"
+  ],
+  "type": "module",
+  "bin": {
+    "cloud-bill-analyzer": "dist/cli.js"
+  },
+  "exports": {
+    ".": "./dist/bill-analyzer.js",
+    "./style.css": "./dist/bill-analyzer.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "vite build && node scripts/build-cli.mjs && node scripts/check-offline.mjs",
+    "watch": "vite build --watch",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "update-prices": "node scripts/update-prices.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  }
+}

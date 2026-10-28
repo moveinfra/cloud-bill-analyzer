@@ -1,0 +1,52 @@
+name: Bug report
+description: The page or the CLI fails, or a number looks wrong
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. **Please do not attach your bill.** It contains account ids, resource names and spend.
+        If a few rows help, paste them with ids, names and tags replaced (see the sample files in `samples/`).
+        Security issues: use Security → Report a vulnerability instead.
+  - type: dropdown
+    id: format
+    attributes:
+      label: Which export format?
+      options:
+        - AWS Data Exports (CUR 2.0)
+        - AWS Cost and Usage Report (legacy CUR)
+        - Azure cost details export (EA)
+        - Azure cost details export (MCA)
+        - Azure cost details export (pay-as-you-go / other)
+        - Google Cloud BigQuery billing export
+        - Google Cloud cost table (console CSV)
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - Web page (moveinfra.github.io or moveinfra.eu)
+        - CLI
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version and browser / Node.js
+      description: The version is in the page footer, or `cloud-bill-analyzer --version`
+      placeholder: 0.1.0, Firefox 140
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: rows
+    attributes:
+      label: Anonymised header and rows (optional)
+      description: The header line and a few rows that show the problem, with ids and names replaced.
+      render: text

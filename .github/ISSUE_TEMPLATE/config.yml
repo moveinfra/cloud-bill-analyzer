@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security issue
+    url: https://github.com/moveinfra/cloud-bill-analyzer/security/advisories/new
+    about: Report vulnerabilities privately.
+  - name: A price in the index looks wrong
+    url: https://github.com/moveinfra/eu-cloud-prices/issues/new?template=price_correction.yml
+    about: EU and hyperscaler prices come from the EU Cloud Price Index.
+  - name: Moving to an EU cloud
+    url: https://moveinfra.eu
+    about: Questions about a migration, not about this tool.

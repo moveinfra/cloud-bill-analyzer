@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- connect-src 'none': the page cannot make network requests, so your bill cannot leave the browser. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; worker-src blob:; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Cloud bill analyzer</title>
+  <meta name="description" content="See what your AWS, Azure or Google Cloud bill would cost on UpCloud, Hetzner, Scaleway and OVHcloud. Runs in your browser; the file never leaves your machine.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 rx=%224%22 fill=%22%230B7A66%22/%3E%3Cpath d=%22M4 11h2V7H4zm3 0h2V4H7zm3 0h2V8h-2z%22 fill=%22%23fff%22/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./dist/bill-analyzer.css">
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; background: #faf9f6; color: #161817; font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+    @media (prefers-color-scheme: dark) { body { background: #111413; color: #eceeec; } header p { color: #a3aaa7; } }
+    main { max-width: 960px; margin: 0 auto; padding: 32px 16px 48px; }
+    header { margin-bottom: 20px; }
+    header h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.02em; }
+    header p { margin: 0; color: #525856; max-width: 44em; }
+    header a, footer a { color: inherit; }
+    footer { margin-top: 24px; font-size: 0.85rem; color: #525856; text-align: center; }
+    @media (prefers-color-scheme: dark) { footer { color: #a3aaa7; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>What would your cloud bill cost on an EU cloud?</h1>
+      <p>Drop the cost export from AWS, Azure or Google Cloud. The analyzer maps servers, databases, storage, traffic,
+        load balancers and Kubernetes to UpCloud, Hetzner, Scaleway and OVHcloud. It runs in this page; your file is not uploaded.</p>
+    </header>
+    <div id="app"></div>
+    <footer>Open source, Apache-2.0: <a href="https://github.com/moveinfra/cloud-bill-analyzer">github.com/moveinfra/cloud-bill-analyzer</a> · by <a href="https://moveinfra.eu/">MoveInfra</a></footer>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

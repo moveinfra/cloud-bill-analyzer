@@ -1,0 +1,17 @@
+Billing account name,Billing account ID,Project name,Project ID,Service description,Service ID,SKU description,SKU ID,Credit type,Cost type,Usage start date,Usage end date,Usage amount,Usage unit,Unrounded Cost ($),Cost ($)
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Compute Engine,ANON,E2 Instance Core running in Frankfurt,ANON-37,,Usage,2026-09-01,2026-09-30,11520,hour,316.8,316.8
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Compute Engine,ANON,E2 Instance Ram running in Frankfurt,ANON-36,,Usage,2026-09-01,2026-09-30,46080,gibibyte hour,170.0352,170.04
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Compute Engine,ANON,T2A Instance Core running in Frankfurt,ANON-38,,Usage,2026-09-01,2026-09-30,5760,hour,194.112,194.11
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Compute Engine,ANON,T2A Instance Ram running in Frankfurt,ANON-37,,Usage,2026-09-01,2026-09-30,23040,gibibyte hour,103.9104,103.91
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Compute Engine,ANON,SSD backed PD Capacity in Frankfurt,ANON-35,,Usage,2026-09-01,2026-09-30,800,gibibyte month,176.8,176.8
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Compute Engine,ANON,Network Internet Data Transfer Out from Frankfurt to EMEA,ANON-57,,Usage,2026-09-01,2026-09-30,2500,gibibyte,300,300
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Networking,ANON,Network Load Balancing: Forwarding Rule Minimum Service Charge in Frankfurt,ANON-75,,Usage,2026-09-01,2026-09-30,720,hour,18,18
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Cloud Storage,ANON,Standard Storage Frankfurt,ANON-26,,Usage,2026-09-01,2026-09-30,1200,gibibyte month,27.6,27.6
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Kubernetes Engine,ANON,Zonal Kubernetes Clusters,ANON-25,,Usage,2026-09-01,2026-09-30,720,hour,72,72
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Cloud SQL,ANON,Cloud SQL for MySQL: Zonal - vCPU in Frankfurt,ANON-46,,Usage,2026-09-01,2026-09-30,1440,hour,71.424,71.42
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Cloud SQL,ANON,Cloud SQL for MySQL: Zonal - RAM in Frankfurt,ANON-45,,Usage,2026-09-01,2026-09-30,5400,gibibyte hour,45.36,45.36
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Cloud SQL,ANON,Cloud SQL for MySQL: Zonal - Standard storage in Frankfurt,ANON-58,,Usage,2026-09-01,2026-09-30,100,gibibyte month,20.4,20.4
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Cloud Monitoring,ANON,Monitoring data,ANON-15,,Usage,2026-09-01,2026-09-30,40,mebibyte,10.2,10.2
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Cloud Pub/Sub,ANON,Message Delivery Basic,ANON-22,,Usage,2026-09-01,2026-09-30,0.2,tebibyte,8,8
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Compute Engine,ANON,E2 Instance Core running in Frankfurt,ANON-37,Committed use discount,Usage,2026-09-01,2026-09-30,0,hour,-31.68,-31.68
+Example billing,000000-AAAAAA-BBBBBB,shop,shop-prod,Kubernetes Engine,ANON,Zonal Kubernetes Clusters,ANON-25,Free tier,Usage,2026-09-01,2026-09-30,0,hour,-72,-72

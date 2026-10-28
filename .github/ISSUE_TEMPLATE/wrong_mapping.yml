@@ -1,0 +1,42 @@
+name: Wrong mapping
+description: A line of the bill ended up in the wrong category, or should be compared but is not
+labels: [mapping]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do not attach your real bill.** Paste only the header and the rows in question, with account ids, resource
+        ids, names and tags replaced by placeholders. The usage type, meter or SKU text and the amounts are what we need.
+  - type: dropdown
+    id: format
+    attributes:
+      label: Which export format?
+      options:
+        - AWS Data Exports (CUR 2.0)
+        - AWS Cost and Usage Report (legacy CUR)
+        - Azure cost details export
+        - Google Cloud BigQuery billing export
+        - Google Cloud cost table (console CSV)
+    validations:
+      required: true
+  - type: textarea
+    id: rows
+    attributes:
+      label: Anonymised header and rows
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: got
+    attributes:
+      label: Where it ended up
+      placeholder: "Not compared: Amazon Elastic Compute Cloud, no EU equivalent"
+    validations:
+      required: true
+  - type: textarea
+    id: want
+    attributes:
+      label: Where it should go, and why
+      description: A link to the provider's docs for the usage type, meter or SKU helps.
+    validations:
+      required: true
